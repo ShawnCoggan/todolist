@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+
+/* mobile */
+html {
+    background-image:url(../images/background.jpg);
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    width: 60%; 
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+li {
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0 auto;
+    max-width: 90%;
+}
+.logo {
+    width: 75%;
+}
+a {
+    text-decoration: none;
+    color: #3A8C8C;
+}
+a:visited {
+    color: #4A639D;
+}
+a:hover {
+    color: #4DBB4D;
+}
+img {
+    width: 100%;
+}
+h2 {
+    margin: 1%;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+h3 {
+    text-align: center;
+    margin: 1%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 105%;
+}
+h4 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 120%;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+.intro-text {
+    margin: 2%;
+    line-height: 1.15em;
+}
+article {
+    margin: 1%;
+    flex: 1;
+}
+.name {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+.bio {
+    margin: 3%;
+    padding-bottom: 2.5%;
+    line-height: 1.10em;
+}
+.bio-section {
+    margin-top: 1%;
+    border-radius:15px;
+    box-shadow: 5px 5px 35px rgba(0,0,0,.5);
+}
+.intro-ex {
+    display: none;
+}
+.contact {
+    padding: 1%;
+}
+footer {
+    padding: .25%;
+}
+.rslides {
+    display: none;
+}
+.main-img {
+    display: block;
+}
+.bio-img {
+    display: block;
+    width: 60%;
+    margin: 1% auto;
+    padding: 2% 0;
+}
+.contact {
+    box-shadow: 5px 5px 35px rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+.contact-text {
+    text-align: center;
+}
+footer {
+    padding: 1%;
+}
+
+@media screen and (min-width:768px){
+    body {
+        width: 65%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    h3 {
+        font-size: 130%;
+    }
+    li {
+        font-size: 125%;
+    }
+    .logo {
+        width: 60%;
+    }
+    p {
+        font-size: 110%;
+        color: #333;
+    }
+    .main-img {
+        display: none;
+    }
+    .rslides {
+      display: block;
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .rslides img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0;
+    }
+    .bio-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro-ex {
+        display: block;
+    }
+    .contact-section {
+        display: flex;
+    }
+    .contact-text {
+        text-align: center;
+        flex: 1;
+        line-height: 1.15em;
+        border-left: solid 1px #111;
+        font-size: 125%;
+    }
+    .contact-text:first-child {
+        border: none;
+    }
+    .contact {
+        border-radius: 20px;
+        box-shadow: 5px 5px 35px rgba(0,0,0,.5);
+        margin: 1.5%;
+    }
+}

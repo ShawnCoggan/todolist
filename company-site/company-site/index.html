@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SGC Design</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/lightbox.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><img src="images/logo.png" class="logo" id="home" alt="SGC Design logo"/></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#bios">Bios</a></li>
+                <li><a href="#projects-nav">Projects</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <img class="main-img" src="images/team.jpg" alt="team working on project" />
+        <ul class="rslides">
+            <li><img src="images/team.jpg" alt="Team working on project"></li>
+            <li><img src="images/typing.jpg" alt="Someone typing"></li>
+            <li><img src="images/code.jpg" alt="Code"></li>
+        </ul>
+
+            <h2 id="about">Welcome to SGC Design</h2>
+                <p class="intro-text">Welcome to SGC Design, here you can find three web developers and designers who are able to create and design web pages for any business or client. We all have experience in using HTML, CSS, and JavaScript to develop a web page that is up to date and meets current web standards. We also have experience working with clients and our projects that were made for them are displayed on this site. There is always more to learn in this industry so we are constantly challenging ourselves and trying to learn different things that clients would want on their website.  Making web pages is a huge part of our lives and we are always practicing to make sure we can have a better website than our competitors.</p>     
+        
+                <p class="intro-text intro-ex">SGC Design was not always a team, however. We all attended the same college and migrated together to form a solid and strong working web design/development team. Our goal is to become some of the best developers and designers in the industry so that we can please our clients and keep our name out in the public. We have received awards in the past for web pages that we have made. They were an award for an organized and responsive website while working for a company, and an award for creating a logo for another company that was used on their website and received great recognition by the public.</p>
+        
+                <p class="intro-text intro-ex">Other than working with web pages for a good portion of our lives we are also very knowledgeable on organizing work and meeting client’s standards. SGC Design is very cooperative when working with a client and we strive to achieve the exact requests that are given to us.  We look forward to working with new clients because we have more to show, and this is just the beginning.</p>
+    </main>
+    
+    <div class="bio-flex" id="bios">
+        <article class="bio-section">
+            <img src="images/bio-shawn.jpg" alt="Shawn Coggan" class="bio-img" />
+            <h4 class="name">Shawn Coggan</h4>
+            <p class="bio">My name is Shawn Coggan and I am a Project Manager.
+            I am experienced in working with HTML, CSS, JavaScript, MySQL, and PHP. I also have experience in managing a web design team in order to create projects for clients. I am very good at listening and communicating with teams so that everything can work out efficiently without any bumps. I have also developed a mobile website for the company Upside Down Hats which shows my experience with HTML, CSS and JavaScript.</p>
+        </article>
+
+        <article class="bio-section">
+            <img src="images/bio-julie.jpg" alt="Julie Simmons" class="bio-img" />
+            <h4 class="name">Julie Simmons</h4>
+            <p class="bio">My name is Julie Simmons and I am a Designer.
+            I have experience working with coding languages such as HTML, CSS, Javascript, MySQL, and PHP. I also have experience in Adobe Illustrator, Photoshop, and Indesign. I developed a website for the company Cozy Covers, and have worked with a company on creating a website for the annual Cure in the Endzone event.</p>
+        </article>
+
+        <article class="bio-section">
+            <img src="images/bio-kathleen.jpg" alt="Kathleen Glackin" class="bio-img" />
+            <h4 class="name">Kathleen Glackin</h4>
+            <p class="bio">My name is Kathleen Glackin and I am a Web Developer. My experience includes working with HTML, CSS, JavaScript, MySQL, and PHP to create a variety of projects. I have developed a mobile website for the company Finale Headphones, demonstrating proficiency in HTML, CSS, and JavaScript to sell a customizable product. Along with this, I have worked with the Fawn Film Festival in designing and creating a website for their event. I have also worked with developing and manipulating databases with MySQL and PHP and then using HTML to incorporate them with web pages.</p>
+        </article>
+    </div>
+    
+    <section class="projects" id="projects-nav">
+            <h3>Our Projects</h3>
+        <img src="images/shawn-proj.jpg" alt="Example Website" class="main-img" />
+                <ul class="rslides">
+                    <li><img src="images/shawn-proj.jpg" alt="Example of one of Shawn's projects"></li>
+                    <li><img src="images/julie-proj.jpg" alt="Example of one of Julie's projects"></li>
+                    <li><img src="images/kathleen-proj.jpg" alt="Example of one of Kathleen's projects"></li>
+                </ul>
+        
+        <p class="intro-text">Pictured above are examples of some of the projects that we have done in the past. These range from mobile based sites that are meant for smaller screens to desktop based websites meant for laptops and computers. We diligently worked with each client to ensure that the final product be exactly what they wanted so that they were completely satisfied with their site.</p>     
+        
+    </section>
+    
+    <section class="contact" id="contact-us">
+        <h3>Contact Us</h3>
+            <div class="contact-section">
+                <p class="contact-text">Project Manager - <a href="mailto:cogganshawn@gmail.com">cogganshawn@gmail.com</a></p>
+                <p class="contact-text">Web Designer - <a href="mailto:jms98@students.ptcollege.edu">jms98@students.ptcollege.edu</a></p>
+                <p class="contact-text">Web Developer - <a href="mailto:kaglackin@gmail.com">kaglackin@gmail.com</a></p>
+             </div>
+    </section>
+    
+    <footer>
+        <p>&copy; SGC Design</p>
+    </footer>
+    
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/responsiveslides.js"></script>
+    <script>
+    $(function () {
+
+      $(".rslides").responsiveSlides({
+        maxwidth: 1100,
+        speed: 400,
+        timeout: 4000
+      });
+
+    });
+  </script>
+
+</body>
+</html>
